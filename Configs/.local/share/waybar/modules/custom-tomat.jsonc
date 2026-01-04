@@ -1,0 +1,10 @@
+{
+  "custom/tomat": {
+    "exec": "${HOME}/.cargo/bin/tomat status",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "${HOME}/.cargo/bin/tomat toggle",
+    "on-click-right": "${HOME}/.cargo/bin/tomat skip"
+  }
+}
