@@ -16,11 +16,11 @@ scrDir="$(dirname "$(realpath "$0")")"
 source "$scrDir/globalcontrol.sh"
 case "$WALLPAPER_SET_FLAG" in
     p)
-        xtrans=$WALLPAPER_SWWW_TRANSITION_PREV
+        xtrans=$WALLPAPER_AWWW_TRANSITION_PREV
         xtrans="${xtrans:-"outer"}"
         ;;
     n)
-        xtrans=$WALLPAPER_SWWW_TRANSITION_NEXT
+        xtrans=$WALLPAPER_AWWW_TRANSITION_NEXT
         xtrans="${xtrans:-"grow"}"
         ;;
 esac
@@ -40,7 +40,7 @@ if [ "$is_video" -eq 1 ]; then
     extract_thumbnail "$selected_wall" "$cached_thumb"
     selected_wall="$cached_thumb"
 fi
-xtrans=$WALLPAPER_SWWW_TRANSITION_DEFAULT
+xtrans=$WALLPAPER_AWWW_TRANSITION_DEFAULT
 [ -z "$xtrans" ] && xtrans="grow"
 [ -z "$wallFramerate" ] && wallFramerate=60
 [ -z "$wallTransDuration" ] && wallTransDuration=0.4
